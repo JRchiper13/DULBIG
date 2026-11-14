@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title">
+  <title id="title">Chispa Dulce</title>
+  <defs>
+    <linearGradient id="g" x1="12" y1="8" x2="116" y2="120" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f28a9e"/><stop offset="1" stop-color="#d96e91"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="120" height="120" rx="38" fill="url(#g)"/>
+  <path d="M64 23c4 17 10 23 27 27-17 4-23 10-27 27-4-17-10-23-27-27 17-4 23-10 27-27Z" fill="#fffaf6"/>
+  <circle cx="94" cy="91" r="10" fill="#f8d99e"/>
+  <circle cx="34" cy="91" r="6" fill="#fffaf6" fill-opacity=".8"/>
+  <path d="M43 105c7 5 14 7 21 7" fill="none" stroke="#fffaf6" stroke-linecap="round" stroke-opacity=".7" stroke-width="3"/>
+</svg>

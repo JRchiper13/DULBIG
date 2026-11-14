@@ -1,0 +1,15 @@
+CARPETA DE IMAGENES Y LOGO
+
+Guarda aquí las fotos de tus productos y el logo de tu tienda.
+
+Para mostrar una foto en una tarjeta:
+1. Copia la imagen a esta carpeta, por ejemplo: gomitas-frutales.jpg
+2. En script.js, agrega la propiedad imagen: "productos/gomitas-frutales.jpg"
+   al producto correspondiente.
+   Ejemplo: { id: 1, name: "Gomitas frutales", ..., image: "productos/gomitas-frutales.jpg" }
+3. En index.html, puedes sustituir el logo de texto por una imagen guardada
+   aquí, por ejemplo: <img src="productos/logo.png" alt="Nombre de tu tienda">
+
+Los productos de ejemplo usan ilustraciones emoji para que la página se vea
+completa desde el primer momento. Cambia sus nombres, precios y detalles en
+la lista products de script.js.
