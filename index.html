@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fffaf6">
+  <meta name="description" content="Descubre dulces, chocolates y snacks seleccionados en Chispa Dulce.">
+  <title>Chispa Dulce | Dulces con otra energía</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Barra superior y navegación -->
+  <div class="announcement">ANTOJOS SELECCIONADOS · ENVÍOS COORDINADOS <span aria-hidden="true">✦</span></div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Chispa Dulce, inicio">
+      <img class="brand-logo" src="productos/logo.jpg" alt="">
+      <span>chispa<span class="brand-accent">dulce</span><small>GOOD MOOD · GOOD TASTE</small></span>
+    </a>
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a href="#inicio">Inicio</a>
+      <a href="#catalogo">Golosinas</a>
+      <a href="#nosotros">Nosotros</a>
+    </nav>
+    <button class="cart-button" id="open-cart" type="button" aria-label="Abrir carrito">
+      <span aria-hidden="true">🛍</span><span class="cart-label">Mi carrito</span>
+      <span class="cart-count" id="cart-count" aria-live="polite">0</span>
+    </button>
+  </header>
+
+  <main>
+    <!-- Presentación principal -->
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> CURATED TREATS · EST. 2025</p>
+        <h1>Tu lado dulce,<br><span>en otra dimensión.</span></h1>
+        <p class="hero-description">Un catálogo curado de sabores, texturas y pequeños caprichos. Encuentra tu próximo favorito y convierte cualquier pausa en un buen momento.</p>
+        <a class="primary-button" href="#catalogo">Explorar colección <span aria-hidden="true">↗</span></a>
+        <div class="hero-note"><span class="avatar-stack" aria-hidden="true"><i>🍬</i><i>🍭</i><i>🍫</i></span><span><strong>Una selección para disfrutar</strong><br>clásicos que nunca fallan</span></div>
+      </div>
+      <div class="hero-art" aria-label="Ilustración de dulces coloridos">
+        <div class="hero-sun"></div>
+        <div class="hero-sparkle sparkle-one">✦</div><div class="hero-sparkle sparkle-two">✧</div>
+        <div class="hero-candy candy-one">🍬</div>
+        <div class="hero-candy candy-two">🍭</div>
+        <div class="hero-candy candy-three">🍡</div>
+        <div class="hero-candy candy-four">🍫</div>
+        <div class="hero-logo"><img src="productos/logo.jpg" alt="Logo de Chispa Dulce"></div>
+        <div class="hero-caption">una dosis extra<br>de alegría <span>♡</span></div>
+      </div>
+    </section>
+
+    <!-- Beneficios de la tienda -->
+    <section class="benefits" aria-label="Beneficios">
+      <div><span class="benefit-icon pink">♡</span><p><strong>Elegidos con cariño</strong><small>Para todos tus antojos</small></p></div>
+      <div><span class="benefit-icon yellow">✦</span><p><strong>Un toque de alegría</strong><small>En cada pedido</small></p></div>
+      <div><span class="benefit-icon mint">♧</span><p><strong>Listos para compartir</strong><small>O para ti, claro que sí</small></p></div>
+    </section>
+
+    <!-- Catálogo: categorías, búsqueda y tarjetas generadas desde JavaScript -->
+    <section class="catalog section-wrap" id="catalogo">
+      <div class="section-heading">
+      <div><p class="eyebrow">CURATED FOR YOUR CRAVINGS</p><h2>La colección <span>dulce</span></h2></div>
+        <label class="search-box"><span aria-hidden="true">⌕</span><input id="product-search" type="search" placeholder="Buscar golosinas..." aria-label="Buscar golosinas"></label>
+      </div>
+      <div class="catalog-toolbar">
+        <div class="category-list" id="category-list" aria-label="Filtrar por categoría">
+          <button class="category-chip active" type="button" data-category="Todos">Todo rico</button>
+          <button class="category-chip" type="button" data-category="Gomitas">Gomitas</button>
+          <button class="category-chip" type="button" data-category="Chocolates">Chocolates</button>
+          <button class="category-chip" type="button" data-category="Paletas">Paletas</button>
+          <button class="category-chip" type="button" data-category="Mix">Mix dulce</button>
+        </div>
+      <span class="product-total" id="product-total"></span>
+      </div>
+      <div class="product-grid" id="product-grid" aria-live="polite"></div>
+      <p class="empty-message" id="empty-message" hidden>No encontramos golosinas con esa búsqueda. ¡Prueba con otra! 🍬</p>
+    </section>
+
+    <!-- Mensaje de marca -->
+    <p class="catalog-note">Precios referenciales en USD. Presentaciones y disponibilidad pueden variar según el mercado local. Las fichas de marca enlazan a información oficial.</p>
+    <section class="about-band" id="nosotros">
+      <div class="about-icon" aria-hidden="true">🍓</div>
+      <div><p class="eyebrow">UNA PAUSA CON PERSONALIDAD</p><h2>Los buenos momentos <span>también se saborean.</span></h2><p>Una selección para regalar, compartir o guardar solo para ti. Ingredientes y disponibilidad dependen de cada producto y mercado.</p></div>
+      <a href="#catalogo" class="about-link">Encuentra tu favorito <span aria-hidden="true">→</span></a>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#inicio"><img class="brand-logo" src="productos/logo.jpg" alt=""><span>chispa<span class="brand-accent">dulce</span><small>ANTOJOS QUE ALEGRAN</small></span></a>
+    <p>Curiosidad, sabor y un toque de color. <span>✦</span></p>
+    <small>© 2026 Chispa Dulce</small>
+  </footer>
+
+  <!-- Panel lateral del carrito -->
+  <div class="cart-overlay" id="cart-overlay" hidden></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Tu carrito" aria-modal="true" role="dialog" aria-hidden="true">
+    <div class="drawer-header"><div><p class="eyebrow">TU SELECCIÓN</p><h2>Mi carrito <span>♡</span></h2></div><button class="close-cart" id="close-cart" type="button" aria-label="Cerrar carrito">×</button></div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-empty" id="cart-empty"><span aria-hidden="true">🛍</span><h3>Tu carrito está esperando</h3><p>Agrega algo rico y alegra tu día.</p><button class="text-button" id="continue-shopping" type="button">Seguir mirando →</button></div>
+    <div class="cart-footer" id="cart-footer" hidden><div class="subtotal"><span>Subtotal</span><strong id="cart-subtotal">$0</strong></div><p>El envío se coordina al confirmar tu pedido.</p><button class="checkout-button" id="checkout-button" type="button">¡Listo, quiero mis dulces! <span>→</span></button></div>
+  </aside>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
